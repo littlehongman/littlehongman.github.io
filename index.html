@@ -28,6 +28,18 @@
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
 
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style type="text/tailwindcss">
+    @tailwind components;
+
+    @layer components {
+      .badge {
+        @apply inline-block bg-blue-100 text-blue-800 text-xs font-medium mt-3 mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -239,7 +251,7 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title">Web Development</h4>
 
                 <p class="service-item-text">
                   Design and build the front-end, back-end, and database of web applications. 
@@ -302,7 +314,7 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Desktop apps</h4>
+                <h4 class="h4 service-item-title">Desktop Application</h4>
 
                 <p class="service-item-text">
                   Build desktop application that run can locally on Mac and Windows
@@ -338,108 +350,6 @@
         </section>
 
 
-        <!--
-          - testimonials
-        -->
-
-        <!-- <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section> -->
-
 
         <!--
           - testimonials modal
@@ -455,86 +365,10 @@
               <ion-icon name="close-outline"></ion-icon>
             </button>
 
-            <!-- <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div> -->
-
-            <!-- <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div> -->
-
           </section>
 
         </div>
 
-
-        <!--
-          - clients
-        -->
-
-        <!-- <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section> -->
 
       </article>
 
@@ -763,15 +597,15 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Web Development</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>Desktop Application</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Machine Learning</button>
             </li>
 
           </ul>
@@ -795,15 +629,15 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Web Development</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>Desktop Application</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Machine Learning</button>
               </li>
 
             </ul>
@@ -813,165 +647,173 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+
+              <h3 class="project-title">Owl Go - Social Networking Website</h3>
+              <p class="project-category">Web development</p>
+              <br/> 
+
+              <a href="https://owlgo-final.surge.sh/main">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/owlgo.png" alt="owlgo" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
               </a>
+              
+              <br/>
+              <h3 class="project-subtitle">Overview</h3>
+              <p class="project-content">The social networking website that offers features cater to users' diverse needs. Functionalities include user registration and authentication, profile management, and the ability for users to follow friends, post and comment on articles, and upload images. Additionally, the website consists of advanced features such as OAuth 2.0 and account linking, which enhance the user experience by providing streamlined login processes by connecting existing accounts with third-party accounts.</p>
+
+              <br/>
+              <h3 class="project-subtitle">Tech Stack</h3>
+              <p class="project-content">
+                <span class="badge">TypeScript</span>
+                <span class="badge">React</span>
+                <span class="badge">Node.js</span>
+                <span class="badge">Express.js</span>
+                <span class="badge">MongoDB</span>
+                <span class="badge">Jest</span>
+              </p>
+
+              <br/>
+              <hr/>
+              <br/>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+
+              <h3 class="project-title">Taiwanese-Chinese Machine Translation</h3>
+              <p class="project-category">Machine Learning</p>
+              <br/> 
+
+              <a href="https://littlehongman-taiwanese-chinese-mt-app-cewe4j.streamlit.app/">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/mt.png" alt="machine translation" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
               </a>
+              
+              <br/>
+              <h3 class="project-subtitle">Overview</h3>
+              <p class="project-content">This app generates Machine Translation from 
+                <strong>Taiwanese (Hokkien)</strong> to <strong>Traditional Chinese</strong> 
+                characters using the 
+                <a style="display: inline; color: lightskyblue" href="https://github.com/bentrevett/pytorch-seq2seq/blob/master/6%20-%20Attention%20is%20All%20You%20Need.ipynb">Transformer</a> architecture.
+                We also implemented Beam Search and Length penalty to improve performance.
+              </p>
+              
+                <br/>
+              <h3 class="project-subtitle">Tech Stack</h3>
+              <p class="project-content">
+                <span class="badge">Python</span>
+                <span class="badge">Pytorch</span>
+                <span class="badge">Streamlit</span>
+              </p>
+
+              <br/>
+              <hr/>
+              <br/>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+
+              <h3 class="project-title">CLIPGPT-ImageCaptioner</h3>
+              <p class="project-category">Machine Learning</p>
+              <br/> 
+
+              <a href="https://huggingface.co/spaces/Littlehongman/CLIPGPT-ImageCaptioner">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/caption.png" alt="image captioner" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
               </a>
+              
+              <br/>
+              <h3 class="project-subtitle">Overview</h3>
+              <p class="project-content">This app utilizes OpenAI's GPT-2 and CLIP models to generate image captions. The model architecture was inspired by 
+                <a style="display: inline; color: lightskyblue" href="https://arxiv.org/abs/2111.09734">ClipCap: CLIP Prefix</a>
+                for Image Captioning, which uses CLIP encoding as prefix and fine-tune GPT-2 model to generate the caption.
+              
+              </p>
+
+
+              <br/>
+              <h3 class="project-subtitle">Tech Stack</h3>
+              <p class="project-content">
+                <span class="badge">Python</span>
+                <span class="badge">Pytorch</span>
+                <span class="badge">Streamlit</span>
+                <span class="badge">Huggingface</span>
+              </p>
+
+              <br/>
+              <hr/>
+              <br/>
+
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+            
+            <li class="project-item  active" data-filter-item data-category="desktop application">
+
+              <h3 class="project-title">Chinese Language Sample Analysis System for Children</h3>
+              <p class="project-category">Desktop Application</p>
+              <br/> 
+
+              <a href="https://github.com/littlehongman/CLSA">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/CLSA.jpeg" alt="CLSA" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
               </a>
-            </li>
+              
+              <br/>
+              <h3 class="project-subtitle">Motivation</h3>
+              <p class="project-content">
+                The system was developed based on the book "Chinese Language Sample Analysis". Our goal is to provide speech therapists with a more efficient system for recording and analyzing children's speech samples. However, in the past, therapists had to transcribe the content of the audio files verbatim into an online word segmentation system and use additional software to analyze the results and record them in a book, making language sample analysis time-consuming and laborious. 
+              </p>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+              <br/>
+              <h3 class="project-subtitle">Implementation</h3>
+              <p class="project-content">
+                The system was developed using a Python GUI (PyQt5). 
+                We leveraged 
+                <a style="display: inline; color: lightskyblue" href="https://github.com/ckiplab/ckip-transformers">CKIP Transformers</a>
+                to perform word segmentation and POS tagging, combined with the
+                <a style="display: inline; color: lightskyblue" href="https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-to-text">Microsoft Speech-to-Text SDK</a>      
+                for speech recognition. We also use MongoDB to help therapists with data management. During development, we held multiple discussions with the therapists to design for the clinician's focus, including the calculation of "mean length of utterances", and "vocabulary diversity".
+              </p>
+              
+              <br/>
+              <h3 class="project-subtitle">Tech Stack</h3>
+              <p class="project-content">
+                <span class="badge">Python</span>
+                <span class="badge">PyQT</span>
+                <span class="badge">MongoDB</span>
+                <span class="badge">Azure</span>
+              </p>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+              <br/>
+              <hr/>
+              <br/>
+              
             </li>
 
           </ul>
