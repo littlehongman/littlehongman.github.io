@@ -115,6 +115,7 @@
 
 
 
+
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -425,6 +426,11 @@ main {
 .contact-info :is(.contact-link, time, address) {
   color: var(--smoky-black);
   font-size: var(--fs-7);
+
+}
+
+.contact-info a:hover {
+  color: var(--orange-yellow-crayola);
 }
 
 .contact-info address { font-style: normal; }
@@ -1401,7 +1407,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .service-icon-box {
     margin-bottom: 0;
-    margin-top: 5px;
+    margin-top: 3px;
+    color: var(--orange-yellow-crayola);
+    font-size: 38px;
   }
 
   .service-content-box { text-align: left; }
